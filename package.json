@@ -1,0 +1,33 @@
+{
+  "name": "use-persisted-reducer",
+  "version": "1.0.0",
+  "description": "A custom React Hook that persist state from useReducer",
+  "main": "src/index.js",
+  "umd:main": "dist/use-persisted-reducer.umd.js",
+  "source": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "microbundle -o dist/ --sourcemap false --target web",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
+    "test": "echo \"No test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnayeni/use-persisted-reducer"
+  },
+  "keywords": [
+    "react",
+    "react-hooks",
+    "useReducer",
+    "utils",
+    "lib",
+    "persistent",
+    "localstorage"
+  ],
+  "author": "johnayeni",
+  "devDependencies": {
+    "microbundle": "^0.11.0",
+    "react": "^16.9.0"
+  }
+}
