@@ -10,7 +10,7 @@
     "prebuild": "rimraf dist",
     "build": "microbundle -o dist/ --sourcemap false --target web",
     "dev": "microbundle watch -o dist/ --sourcemap false --compress false",
-    "test": "echo \"No test specified\""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,15 @@
   ],
   "author": "johnayeni",
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^24.9.0",
     "microbundle": "^0.11.0",
+    "react": "^16.9.0",
+    "rimraf": "^3.0.0",
+    "@testing-library/jest-dom": "^4.0.0"
+  },
+  "peerDependencies": {
     "react": "^16.9.0"
-  }
+  },
+  "dependencies": {}
 }
