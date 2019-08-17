@@ -1,6 +1,6 @@
 {
   "name": "use-persisted-reducer",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A custom React Hook that persist state from useReducer",
   "main": "src/index.js",
   "umd:main": "dist/use-persisted-reducer.umd.js",
