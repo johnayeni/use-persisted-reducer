@@ -4,7 +4,7 @@ A custom [React Hook](https://reactjs.org/docs/hooks-overview.html) that persist
 
 [![npm version](https://badge.fury.io/js/use-persisted-reducer.svg)](https://badge.fury.io/js/use-persisted-reducer)
 
-`use-persisted-state` is not a hook itself, but is a factory that accepts a storage `key`
+`use-persisted-reducer` is not a hook itself, but is a factory that accepts a storage `key`
 and an optional storage provider (default = `localStorage`) and returns a hook
 that you can use as a direct replacement for `useReducer`.
 
