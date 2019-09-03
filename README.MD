@@ -63,11 +63,20 @@ function Counter() {
 export default Counter;
 ```
 
+You can also pass in your own storage provider
+
+## Example
+
+```js
+import React from 'react';
+import createPersistedReducer from 'use-persisted-reducer';
+
+// defaults to globalThis.localStorage
+const usePersistedReducer = createPersistedReducer('state', globalThis.sessionStorage);
+```
+
+
 ## License
 
 **[MIT](LICENSE)** Licensed
 
-## TODO
-
-- Write tests
-- Sync dispatch across tabs
