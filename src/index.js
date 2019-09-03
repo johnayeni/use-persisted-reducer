@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useReducer } from 'react';
 
 import usePersistedReducer from './usePersistedReducer';
 import createStorage from './createStorage';
@@ -9,7 +9,7 @@ const createPersistedReducer = (key, provider = globalThis.localStorage) => {
     return (reducer, initialState, init) =>
       usePersistedReducer(reducer, initialState, init, key, storage);
   }
-  return useState;
+  return useReducer;
 };
 
 export default createPersistedReducer;
