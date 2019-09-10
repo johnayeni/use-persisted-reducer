@@ -75,8 +75,23 @@ import createPersistedReducer from 'use-persisted-reducer';
 const usePersistedReducer = createPersistedReducer('state', globalThis.sessionStorage);
 ```
 
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -am 'Some commit message'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request 😉😉
+
+## How can I thank you?
+
+Why not star the github repo? I'd love the attention! Why not share the link for this repository on Twitter?
+
+Don't forget to [follow me on twitter](https://twitter.com/iamraphson)!
+
+Thanks!
+John Ayeni.
 
 ## License
 
 **[MIT](LICENSE)** Licensed
-
