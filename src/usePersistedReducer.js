@@ -1,16 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const usePersistedReducer = (reducer, initialState, init, key, storage) => {
-  const [state, setState] = React.useReducer(
-    reducer,
-    storage.get(key, initialState),
-    init,
-  );
+  const [state, dispatch] = React.useReducer(reducer, storage.get(key, initialState), init);
 
-  const dispatch = (props) => {
-    setState(props);
+  useEffect(() => {
     storage.set(key, state);
-  };
+  }, [state]);
 
   return [state, dispatch];
 };

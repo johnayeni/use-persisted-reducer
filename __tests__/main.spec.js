@@ -2,15 +2,12 @@ import { useReducer } from 'react';
 import '@testing-library/jest-dom/extend-expect';
 
 import createPersistedReducer from '../src';
-import usePersistedReducer from '../src/usePersistedReducer';
 
 describe('createPersistedReducer', () => {
   test('import createPersistedReducer from "use-persisted-reducer"', () => {
     expect(typeof createPersistedReducer).toBe('function');
   });
   test('returns useReducer if provider is null or running SSR', () => {
-    // global.localStorage is undefined in Node.js (but Jest mocks)
-    // expect(createPersistedReducer('key')).toBe(useReducer);
     expect(createPersistedReducer('key', null)).toBe(useReducer);
   });
   test('returns a function if provider provided', () => {
